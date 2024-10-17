@@ -134,7 +134,7 @@
     height: 400px;
     filter: drop-shadow(10px 20px 5px rgba(0, 0, 0, 0.3));
 }
-/* Existing styles remain the same */
+
 
 /* Media query for tablets */
 @media screen and (max-width: 1024px) {
@@ -161,13 +161,16 @@
 /* Media query for large smartphones */
 @media screen and (max-width: 768px) {
   .hero-container {
-    flex-direction: column;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
     text-align: center;
   }
 
   .hero-container .hero-text {
+    padding-top: 10rem;
     padding: 1rem 0;
   }
 
