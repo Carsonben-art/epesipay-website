@@ -9,6 +9,7 @@ import {
   IconButton
 } from '@chakra-ui/react';
 import { RxHamburgerMenu } from "react-icons/rx";
+import logo from '../assets/epesipay-logobg.png'
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -27,7 +28,7 @@ const Nav = () => {
   return (
     <div className={`nav ${scrolled ? 'scrolled' : ''}`}>
       <div className="logo-container">
-        <h1>Epesipay</h1>
+        <img src={logo} alt="" />
       </div>
       <div className={`nav-links ${scrolled ? 'scrolled' : ''}`}>
         <Link to="Home" smooth={true} duration={500}>Home</Link>
@@ -37,7 +38,10 @@ const Nav = () => {
         <Link to="Contacts" smooth={true} duration={500}>Contacts</Link>
       </div>
       <div className="download-btn">
+       <a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target='_blank'>
         <Button>Download</Button>
+       
+       </a>
       </div>
       <div className="menu-container">
         <Menu>

@@ -1,11 +1,9 @@
 import React from 'react';
-import { Button } from '@chakra-ui/react';
+// import { Button } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import image from '../assets/epesipay-bg.png';
-import futurizac from '../assets/futurizac-bg.png';
-// import dtb from '../assets/dtb-bg.png';
-import epesipay from '../assets/epesipay-logobg.png';
+
 
 
 
@@ -35,18 +33,18 @@ const Hero = () => {
         <p>With the Epesipay app, you can send and receive cash, pay bills, <br/>and shop at your favourite store
           all with just a few taps on your mobile phone.
         </p>
-        <motion.button 
-            variants={containerVariants} 
-            whileHover={{ scale: 1.05 }} 
-            transition={{ type: 'spring', stiffness: 300 }}
-          >
-            Download Now
-          </motion.button>
-        <div className="partners-logo">
-          <img src={futurizac} alt="" />
-          {/* <img src={dtb} alt="" /> */}
-          <img src={epesipay} alt="" />
-        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target='_blank'>
+          <motion.button 
+              variants={containerVariants} 
+              whileHover={{ scale: 1.05 }} 
+              transition={{ type: 'spring', stiffness: 300 }}
+              
+            >
+              Download Now
+            </motion.button>
+
+        </a>
+        
       </motion.div>
       <motion.div
         ref={imgRef}

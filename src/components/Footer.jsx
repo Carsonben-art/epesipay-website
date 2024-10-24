@@ -7,6 +7,10 @@ import logo from '../assets/epesipay-logobg.png'
 import { FaInstagram, FaTiktok } from 'react-icons/fa6';
 import { Link } from 'react-scroll'
 
+import futurizac from '../assets/futurizac-bg.png';
+import dtb from '../assets/dtb-bg.png';
+import epesipay from '../assets/epesipay-logobg.png';
+
 
 const Footer = () => {
   const { ref, inView } = useInView({
@@ -50,8 +54,15 @@ const Footer = () => {
     >
       <div className="footer-content">
         <motion.div className="footer-logo" variants={columnVariants}>
-          <img src={logo} alt="Finpay" />
-          <h2>Epesipay</h2>
+          <div className="logo-container-footer">
+            <img src={logo} alt="Finpay" />
+            <h2>Epesipay</h2>
+          </div>
+          <div className="partners-logo">
+          <img src={futurizac} alt="" />
+          <img src={dtb} alt="" />
+          {/* <img src={epesipay} alt="" /> */}
+        </div>
         </motion.div>
         <div className="footer-links">
           <motion.div className="footer-column" variants={columnVariants}>
@@ -67,7 +78,7 @@ const Footer = () => {
           <motion.div className="footer-column" variants={columnVariants}>
             <h4>Download App</h4>
             <ul>
-              <li><a href="#">Google playstore</a></li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay">Google playstore</a></li>
               <li><a href="#">App Store (Coming Soon)</a></li>
             </ul>
           </motion.div>

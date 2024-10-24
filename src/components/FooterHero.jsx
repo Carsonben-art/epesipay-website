@@ -34,13 +34,16 @@ const FooterHero = () => {
               secured <br /> transactions, and cash flow management tools.
             </p>
           </motion.div>
-          <motion.button 
-            variants={containerVariants} 
-            whileHover={{ scale: 1.05 }} 
-            transition={{ type: 'spring', stiffness: 300 }}
-          >
-            Download
-          </motion.button>
+          <a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target='_blank'>
+            <motion.button 
+              variants={containerVariants} 
+              whileHover={{ scale: 1.05 }} 
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
+              Download
+            </motion.button>
+          
+          </a>
         </div>
       </div>
     </motion.div>
