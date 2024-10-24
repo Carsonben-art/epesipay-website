@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import image from '../assets/epesipay-bg.png';
 import futurizac from '../assets/futurizac-bg.png';
-import dtb from '../assets/dtb-bg.png';
+// import dtb from '../assets/dtb-bg.png';
 import epesipay from '../assets/epesipay-logobg.png';
 
 
@@ -31,7 +31,7 @@ const Hero = () => {
         transition={{ duration: 0.5 }}
         className="hero-text"
       >
-        <h1>Mobile money solution <br/> that saves you time, money and <br/> gives you a peace of mind.</h1>
+        <h1>Mobile money solution <br/> that saves you time, money and <br/> <span> gives you a peace of mind.</span></h1>
         <p>With the Epesipay app, you can send and receive cash, pay bills, <br/>and shop at your favourite store
           all with just a few taps on your mobile phone.
         </p>
@@ -44,7 +44,7 @@ const Hero = () => {
           </motion.button>
         <div className="partners-logo">
           <img src={futurizac} alt="" />
-          <img src={dtb} alt="" />
+          {/* <img src={dtb} alt="" /> */}
           <img src={epesipay} alt="" />
         </div>
       </motion.div>

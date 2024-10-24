@@ -1,5 +1,5 @@
 import React from 'react';
-import epesipay from '../assets/epesipay2.jpeg';
+import epesipay from '../assets/epesipay_mockup2.png';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -26,7 +26,7 @@ const About = () => {
       variants={fadeInVariants}
     >
       <p className='about'>About us</p>
-      <h3 className='about-heading'>Epesipay</h3>
+      <h3 className='about-heading'>"Redefining Payments for Modern Life"</h3>
       <div className="about-container">
         <div className="about-image">
           <img src={epesipay} alt="Epesipay" />

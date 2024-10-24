@@ -12,7 +12,7 @@ const FooterHero = () => {
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.5 } // Duration of the fade-in effect
+      transition: { duration: 0.5 } 
     }
   };
 

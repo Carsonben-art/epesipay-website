@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import signup from '../assets/signup.jpg'
 
 const Onboarding = () => {
   const { ref, inView } = useInView({
@@ -43,6 +44,7 @@ const Onboarding = () => {
         <p>Onboarding</p>
         <h2 className="onboarding-title">Unlock Your Financial Potential in This Very Simple Steps.</h2>
         <motion.div className="onboarding-steps" variants={containerVariants}>
+        
           <motion.div className="onboarding-step" variants={stepVariants}>
             <span className="step-number">1</span>
             <h3>Download & Signup</h3>
