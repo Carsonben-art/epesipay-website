@@ -66,7 +66,7 @@ const Footer = () => {
         </motion.div>
         <div className="footer-links">
           <motion.div className="footer-column" variants={columnVariants}>
-            <h4>Address & Contacts</h4>
+            <h4>Contact Us</h4>
             <ul>
               <li><a href="#">support@epesipay.com</a></li>
               <li><a href="#">+254 107174680</a></li>
@@ -99,7 +99,7 @@ const Footer = () => {
           Onboarding
         </Link></li>
               <li><Link to="Contacts" smooth={true} duration={500}>
-          Onboarding
+          Epesipay Business
         </Link></li>
             </ul>
           </motion.div>

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import PricingTable from './PricingTable';
+
 
 const Mission = () => {
   const { ref, inView } = useInView({
@@ -78,6 +80,10 @@ const Mission = () => {
           <h3 className="stat-value">{monthsOfRunway}+</h3>
           <p className="stat-label">Months of runway</p>
         </motion.div>
+      </div>
+      <div className="prices">
+        <h2>Epesipay Transaction Charges</h2>
+        <PricingTable />
       </div>
     </motion.section>
   );

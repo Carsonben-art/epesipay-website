@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+
 import { FaMoneyBillTransfer } from "react-icons/fa6";
 import { MdOutlineSecurity } from "react-icons/md";
 import { BsBank2 } from "react-icons/bs";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+
+
 const Services = () => {
+  
+
     const StyledIcon = ({ icon: Icon, size = 24, color = "#000000" }) => (
         <Icon size={size} color={color} />
     );
@@ -35,7 +40,7 @@ const Services = () => {
     };
 
     const { ref, inView } = useInView({
-        threshold: 0.2, // Trigger animation when 20% of the element is in view
+        threshold: 0.2, 
     });
 
     return (
@@ -74,12 +79,15 @@ const Services = () => {
                     <motion.div className="services" variants={itemVariants}>
                         <StyledIcon icon={BsBank2} size={24} color="#30180D" />
                         <h3>Multiple Wallets</h3>
-                        <p>Run your operations with cash from your wallets and generate yield on funds stored in your wallets.</p>
+                        <p>Run your operations with cash from your wallets and generate yield on funds stored in your wallets.<br/>
+                        <a href="https://www.youtube.com/embed/q7fZDAB4r7w" target='_blank'>Watch How</a>
+                        </p>
                     </motion.div> 
                 </motion.div>
             </div>
+             
         </motion.div>
     )
 }
 
-export default Services
+export default Services;

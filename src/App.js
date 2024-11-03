@@ -9,6 +9,7 @@ import Onboarding from './components/Onboarding'
 import Mission from './components/Mission'
 import FooterHero from './components/FooterHero'
 import Footer from './components/Footer'
+import Faqs from './components/Faqs'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
       </div>
       <div id="Contacts">
         <Mission />
+        <Faqs />
         <FooterHero />
         <Footer />
       </div>

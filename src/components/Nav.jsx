@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from '../assets/epesipay-logobg.png'
+import { GoDownload } from "react-icons/go";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -38,8 +39,8 @@ const Nav = () => {
         <Link to="Contacts" smooth={true} duration={500}>Contacts</Link>
       </div>
       <div className="download-btn">
-       <a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target='_blank'>
-        <Button>Download</Button>
+       <a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target='_blank' rel="noreferrer">
+        <Button>Download <GoDownload /></Button>
        
        </a>
       </div>
