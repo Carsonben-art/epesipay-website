@@ -98,20 +98,20 @@ const Footer = () => {
               <li><Link to="Onboarding" smooth={true} duration={500}>
           Onboarding
         </Link></li>
-              <li><Link to="Contacts" smooth={true} duration={500}>
+              <li><a href="https://business.epesipay.com/" target='_blank' rel="noreferrer">
           Epesipay Business
-        </Link></li>
+        </a></li>
             </ul>
           </motion.div>
         </div>
         <motion.div className="footer-social" variants={socialVariants}>
           <p>Follow us on</p>
           <div className="social-icons">
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaLinkedin /></a>
-            <a href="#"><FaFacebook /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaTiktok /></a>
+            <a href="https://x.com/EpesiPay"><FaTwitter /></a>
+            <a href="https://www.linkedin.com/company/epesipay/"><FaLinkedin /></a>
+            <a href="https://www.facebook.com/profile.php?id=61560520585438"><FaFacebook /></a>
+            <a href="https://www.instagram.com/epesipay/"><FaInstagram /></a>
+            <a href="https://www.tiktok.com/@epesipay"><FaTiktok /></a>
           </div>
         </motion.div>
       </div>

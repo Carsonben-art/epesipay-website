@@ -35,7 +35,7 @@ const Hero = () => {
           all with just a few taps on your mobile phone.
         </p>
         <div className="hero-btns">
-          <a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target='_blank'>
+          <a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target='_blank' rel="noreferrer">
             <motion.button 
                 variants={containerVariants} 
                 whileHover={{ scale: 1.05 }} 
@@ -46,15 +46,17 @@ const Hero = () => {
               </motion.button>
 
           </a>
+          <a href="https://business.epesipay.com/" target='_blank' rel="noreferrer">
+            <motion.button 
+              variants={containerVariants} 
+              whileHover={{ scale: 1.05 }} 
+              transition={{ type: 'spring', stiffness: 300 }}
+              className='business'
+              >
+                  Epesipay Business
+            </motion.button>
 
-          <motion.button 
-            variants={containerVariants} 
-            whileHover={{ scale: 1.05 }} 
-            transition={{ type: 'spring', stiffness: 300 }}
-            className='business'
-            >
-                Epesipay Business
-          </motion.button>
+          </a>
 
         </div>
         

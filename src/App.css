@@ -177,7 +177,7 @@
     gap: 5px;
     max-width: 200px;
 }
-.hero-container .hero-text button:nth-child(2){
+.hero-container .hero-text a:nth-child(2) button{
   background-color: transparent;
   border: 1px solid #30180D;
   color: #4a2815;
