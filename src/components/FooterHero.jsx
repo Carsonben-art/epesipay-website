@@ -23,18 +23,18 @@ const FooterHero = () => {
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={containerVariants}
+      style={{ position: 'relative' }} // Ensure the container has relative positioning
     >
       <div className="footer-hero-container">
         <p>TRY IT NOW</p>
         <div className="footer-c">
           <motion.div className="footer-hero-text" variants={containerVariants}>
-            <h2>Ready to level up your <br /> payment process?</h2>
+            <h2>Ready to level up your <br /> transaction process?</h2>
             <p>
-              Supports small businesses with simple invoicing, 
-              secured <br /> transactions, and cash flow management tools.
+            EpesiPay supports individuals and businesses with secured and <br/> seamless transactions.
             </p>
           </motion.div>
-          <a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target='_blank'>
+          <a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target='_blank' rel="noopener noreferrer">
             <motion.button 
               variants={containerVariants} 
               whileHover={{ scale: 1.05 }} 
@@ -42,12 +42,14 @@ const FooterHero = () => {
             >
               Download
             </motion.button>
-          
           </a>
         </div>
       </div>
+      
+      
+      
     </motion.div>
   );
-}
+};
 
 export default FooterHero;

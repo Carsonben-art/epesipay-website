@@ -36,6 +36,7 @@ const About = () => {
             Our platform is meticulously crafted to deliver unparalleled simplicity and user-friendliness, empowering you to 
             conduct transactions seamlessly, regardless of time or location.
           </p>
+          <br/>
           <p>We understand the frustrations of traditional financial services:</p>
           <ul>
             <li>Exorbitant transaction fees</li>
@@ -43,6 +44,7 @@ const About = () => {
             <li>Aggravating processing delays</li>
             <li>Convoluted payment procedures</li>
           </ul>
+          <br/>
           <p>
             Epesipay addresses these pain points head-on. Our innovative approach streamlines your financial interactions, 
             offering a robust, secure, and efficient alternative to conventional methods. By choosing Epesipay, you're not 

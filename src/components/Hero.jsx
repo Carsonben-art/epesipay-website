@@ -30,7 +30,7 @@ const Hero = () => {
         transition={{ duration: 0.5 }}
         className="hero-text"
       >
-        <h1>Mobile money solution <br/> that saves you time, money and <br/> <span> gives you a peace of mind.</span></h1>
+        <h1>Mobile money solution <br/> that saves you time, money and <br/> <span> gives you peace of mind.</span></h1>
         <p>With the Epesipay app, you can send and receive cash, pay bills, <br/>and shop at your favourite store
           all with just a few taps on your mobile phone.
         </p>

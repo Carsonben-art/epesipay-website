@@ -36,8 +36,9 @@ const Nav = () => {
         <Link to="Services" smooth={true} duration={500}>Services</Link>
         <Link to="About" smooth={true} duration={500}>About us</Link>
         <Link to="Onboarding" smooth={true} duration={500}>Onboarding</Link>
+        <Link to="Promo" smooth={true} duration={500}>Epesipay Business</Link>
         <Link to="Contacts" smooth={true} duration={500}>Contacts</Link>
-        <a href="https://business.epesipay.com/" target='_blank' rel="noreferrer">Epesipay Business</a>
+        
       </div>
       <div className="download-btn">
        <a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target='_blank' rel="noreferrer">
@@ -67,11 +68,12 @@ const Nav = () => {
               <Link to="Onboarding" smooth={true} duration={500}>Onboarding</Link>
             </MenuItem>
             <MenuItem>
-              <Link to="Contacts" smooth={true} duration={500}>Contacts</Link>
+              <Link to="Promo" smooth={true} duration={500}>Epesipay Business</Link>
             </MenuItem>
             <MenuItem>
-            <a href="https://business.epesipay.com/" target='_blank' rel="noreferrer">Epesipay Business</a>
+              <Link to="Contacts" smooth={true} duration={500}>Contacts</Link>
             </MenuItem>
+           
           </MenuList>
         </Menu>
       </div>

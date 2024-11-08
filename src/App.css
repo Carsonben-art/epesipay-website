@@ -257,7 +257,7 @@
     height: 300px;
   }
   .hero-container .hero-btns{
-    gap: 0;
+    gap: 20px;
   }
 }
 
@@ -285,7 +285,7 @@
     height: 250px;
   }
   .hero-container .hero-btns{
-    gap: 0;
+    gap: 20px;
   }
 }
 
@@ -473,8 +473,9 @@
   backdrop-filter: blur(10px);
 }
 .about-us .about-container .about-text ul{
-  list-style: none;
+  list-style: disc;
   color: #30180D;
+  margin-left: 20px;
 }
 .about-us .about-container .about-text p {
   color: #30180D;
