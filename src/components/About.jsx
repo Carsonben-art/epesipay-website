@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 
 const About = () => {
   const { ref, inView } = useInView({
-    threshold: 0.2, // Trigger animation when 20% of the element is in view
+    threshold: 0.2, 
   });
 
   const fadeInVariants = {
@@ -13,7 +13,7 @@ const About = () => {
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.7 } // Duration of the fade-in effect
+      transition: { duration: 0.7 } 
     }
   };
 

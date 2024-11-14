@@ -1,8 +1,8 @@
 import React from 'react';
-// import { Button } from '@chakra-ui/react';
+
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import image from '../assets/epesipay-bg.png';
+import image from '../assets/epesipay-bg.webp';
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 

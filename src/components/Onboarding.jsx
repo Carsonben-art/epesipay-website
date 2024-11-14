@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Box, Image, Text, Flex } from '@chakra-ui/react';
 
-import signup from '../assets/signup.jpg';
-import kyc from '../assets/kyc.jpg';
-import transact from '../assets/transaction.jpg';
+import signup from '../assets/signup.webp';
+import kyc from '../assets/kyc.webp';
+import transact from '../assets/transaction.webp';
 
 const Onboarding = () => {
   const { ref, inView } = useInView({ threshold: 0.2 });
@@ -13,17 +13,17 @@ const Onboarding = () => {
   const steps = [
     {
       title: 'Download & Signup',
-      description: 'Download & Sign up to Epesipay and set up your account from the dashboard.',
+      description: '<a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Download</a> & Signup to Epesipay and set up your account from the dashboard.',
       image: signup,
     },
     {
       title: 'Submit KYC',
-      description: 'After filling in your details, upload a picture of your national ID and take a selfie with your right thumbs up.',
+      description: 'After filling in your details, take a picture of your national ID and take a selfie with your right thumbs up.',
       image: kyc,
     },
     {
       title: 'Begin Transacting!',
-      description: 'On approval of your KYC, your wallet is ready to start transacting. Upload cash from your M-Pesa or bank account and enjoy!',
+      description: 'On approval of your KYC, your wallet is ready to start transacting. Load cash from your M-Pesa or bank account and enjoy!',
       image: transact,
     },
   ];
@@ -70,7 +70,7 @@ const Onboarding = () => {
                 border="1px solid rgba(255, 255, 255, 0.2)"
                 overflow="hidden"
                 maxW="300px"
-                minH="380px" // fixed height for consistent card sizes
+                minH="380px" 
                 textAlign="center"
                 p={4}
                 display="flex"
@@ -90,15 +90,17 @@ const Onboarding = () => {
                 <Text fontSize="xl" fontWeight="bold" color="teal.600">
                   {step.title}
                 </Text>
-                <Text fontSize="md" color="gray.600" mt={2}>
-                  {step.description}
-                </Text>
+                <Text
+                  fontSize="md"
+                  color="gray.600"
+                  mt={2}
+                  dangerouslySetInnerHTML={{ __html: step.description }}
+                />
               </Box>
             </motion.div>
           ))}
         </Flex>
       </Box>
-      
     </motion.section>
   );
 };

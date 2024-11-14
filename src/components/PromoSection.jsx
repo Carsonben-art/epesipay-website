@@ -5,7 +5,7 @@ import { motion, useInView } from 'framer-motion';
 import card from '../assets/epesipay_bs_card.png'
 
 const AnimatedBox = motion(Box);
-const RotatingStar = motion(Box);
+
 
 const PromoSection = () => {
   const ref = React.useRef(null);
@@ -28,11 +28,11 @@ const PromoSection = () => {
           animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -100 }}
           transition={{ duration: 1 }}
         >
-          <Text fontSize="3xl" fontWeight="bold">
-            Start receiving your client transactions <Text as="span" fontWeight="bold" fontStyle="italic" color="#F4AE1A">easily using epesipay business.</Text>
+          <Text fontSize="4xl" fontWeight="bold">
+            Do you own a <Text as="span" fontWeight="bold" fontStyle="italic" color="#F4AE1A">business?</Text>
           </Text>
           <Text fontSize="md" mt={2}>
-            Join over a million businesses who choose EPESIPAY for fast and secure transfers.
+          EpesiPay has got you covered. Join thousands of other business owners who have chosen EpesiPay to streamline payments. Whether B2B or B2C, enjoy fast and secure transactions.
           </Text>
         </AnimatedBox>
         
@@ -44,48 +44,13 @@ const PromoSection = () => {
       </VStack>
 
       <Box position="relative" mt={[8, 3]}>
-        <RotatingStar
-          position="absolute"
-          top={0}
-          right={0}
-          width="24px"
-          height="24px"
-          borderRadius="50%"
-          bg="#30180D"
-          transformOrigin="center"
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 4, ease: 'linear' }}
-        />
-        <RotatingStar
-          position="absolute"
-          top={0}
-          right="30px"
-          width="24px"
-          height="24px"
-          borderRadius="50%"
-          bg="#F4AE1A"
-          transformOrigin="center"
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 4, ease: 'linear' }}
-        />
-        <RotatingStar
-          position="absolute"
-          top="30px"
-          right="15px"
-          width="24px"
-          height="24px"
-          borderRadius="50%"
-          bg="#f7f7f7"
-          transformOrigin="center"
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 4, ease: 'linear' }}
-        />
+       
         <AnimatedBox
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 50 }}
           transition={{ duration: 1 }}
         >
-          <Image src={card} alt="Money and coins" borderRadius="lg" />
+          <Image src={card} alt="card" borderRadius="lg" width='500px' height='500px' />
         </AnimatedBox>
       </Box>
     </Box>

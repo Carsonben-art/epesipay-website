@@ -31,7 +31,7 @@ const FooterHero = () => {
           <motion.div className="footer-hero-text" variants={containerVariants}>
             <h2>Ready to level up your <br /> transaction process?</h2>
             <p>
-            EpesiPay supports individuals and businesses with secured and <br/> seamless transactions.
+            EpesiPay supports individuals and businesses with secured and seamless transactions.
             </p>
           </motion.div>
           <a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target='_blank' rel="noopener noreferrer">
