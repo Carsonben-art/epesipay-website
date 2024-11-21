@@ -25,23 +25,16 @@
   padding-left: 2rem;
 }
 .nav .logo-container img{
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     /* padding-left: 2rem; */
 }
 .nav .nav-links {
   padding: 10px;
   padding-left: 10px;
-  border-radius: 10px;
-  background-color: rgba(247, 247, 247, 0.8); 
-  border: 1px solid #ffffff;
-  backdrop-filter: blur(2px); 
+  
 }
-.nav .nav-links.scrolled {
-  background: none;
-  border: none;
-  backdrop-filter: none; 
-}
+
 .nav .nav-links a{
     text-decoration: none;
     margin-right: 20px;
@@ -129,35 +122,37 @@
   justify-content: center;
   align-items: center;
   padding: 30px;
-  padding-left: 10rem;
   padding-top: 5rem;
-  background: 
-    url('../src/assets/pattern\ 2.png'), 
-    linear-gradient(135deg, #0087D0 0%, #00BFFF 50%, #E0F7FA 100%); 
-  background-size: cover, cover; 
-  background-position: center, center; 
-  background-repeat: no-repeat, no-repeat; 
-  height: 90vh;
+  background: radial-gradient(circle, #0269a0 0%, #0087D0 50%, #9de8f1 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  gap: 20px;
+  height: 95vh;
 }
 .hero-container .hero-text{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    justify-content: center;
+    max-width: 500px;
+    /* line-height: 100px; */
+    
 }
 .hero-container .hero-text h1{
     font-weight: 800;
     font-size: 2rem;
     color: #ffffff;
-    line-height: 2rem;
     font-family: Inter, sans-serif;
+    color: #30180D;
+    
+
 }
 .hero-container .hero-text h1 span{
-  color: #30180D;
+  font-size: 3rem;
 }
+
 .hero-container .hero-text p{
     padding-top: 0.5rem;
-    color: #d7d7d7;
+    color: #000000;
 }
 .hero-container .hero-btns{
   display: flex;
@@ -179,12 +174,12 @@
     gap: 5px;
     max-width: 200px;
 }
-.hero-container .hero-text a:nth-child(2) button{
+/* .hero-container .hero-text a:nth-child(2) button{
   background-color: transparent;
   border: 1px solid #30180D;
   color: #4a2815;
   max-width: 200px;
-}
+} */
 
 .hero-container .hero-img{
   display: flex;
@@ -192,7 +187,8 @@
 }
 .hero-container .hero-img img{
     width: auto;
-    height: 400px;
+    height: 350px;
+    border-radius: 24px;
     filter: drop-shadow(10px 20px 5px rgba(0, 0, 0, 0.1));
 }
 
@@ -266,12 +262,14 @@
 /* Media query for small smartphones */
 @media screen and (max-width: 480px) {
   .hero-container {
+    padding-top: 8rem;
     padding: 2rem 1rem;
+    height: auto;
   }
 
   .hero-container .hero-text h1 {
     font-size: 1.4rem;
-    line-height: 1.4rem;
+    
   }
 
   .hero-container .hero-text p {

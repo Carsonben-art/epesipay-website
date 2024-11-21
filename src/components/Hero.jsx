@@ -2,8 +2,8 @@ import React from 'react';
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import image from '../assets/epesipay-bg.webp';
-import { IoLogoGooglePlaystore } from "react-icons/io5";
+import image from '../assets/man.jpg';
+
 
 
 
@@ -23,6 +23,7 @@ const Hero = () => {
 
   return (
     <div className="hero-container">
+      
       <motion.div
         ref={textRef}
         initial={{ opacity: 0, y: 50 }}
@@ -30,7 +31,7 @@ const Hero = () => {
         transition={{ duration: 0.5 }}
         className="hero-text"
       >
-        <h1>Mobile money solution <br/> that saves you time, money and <br/> <span> gives you peace of mind.</span></h1>
+        <h1><span>EpesiPay Experience: </span><br /> Affordable, Fast & Secure Transactions</h1>
         <p>With the Epesipay app, you can send and receive cash, pay bills, <br/>and shop at your favourite store
           all with just a few taps on your mobile phone.
         </p>
@@ -42,7 +43,7 @@ const Hero = () => {
                 transition={{ type: 'spring', stiffness: 300 }}
                 
               >
-                <IoLogoGooglePlaystore />Google Playstore
+              Epesipay Individual
               </motion.button>
 
           </a>
@@ -70,6 +71,7 @@ const Hero = () => {
       >
         <img src={image} alt="Hero" />
       </motion.div>
+      
     </div>
   );
 };

@@ -26,9 +26,19 @@ const Faqs = () => {
         'Yes, EpesiPay can be used internationally. Check our website for a list of supported countries.',
     },
     {
+      question: 'Who is an active user?',
+      answer:
+        'One who completes a 30 days cycle of transactions and pays the monthly fee.',
+    },
+    {
       question: 'Can I track my transactions?',
       answer:
         'Yes, you can view, track, and export on PDF all transactions on your EpesiPay account.',
+    },
+    {
+      question: 'Does EpesiPay offer rewards?',
+      answer:
+        'Yes. Use your referral code to invite new users and both of you earn cash for being active users.',
     },
     {
       question: 'How do I contact customer support?',
