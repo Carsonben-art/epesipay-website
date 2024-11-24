@@ -1,5 +1,5 @@
 import React from 'react';
-import epesipay from '../assets/epesipay_mockup2.png';
+import epesipay from '../assets/about.jpeg';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 

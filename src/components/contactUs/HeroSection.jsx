@@ -51,14 +51,7 @@ const HeroSection = () => {
           We're here to assist you every step of the way. Whether you have questions, feedback,
           or are interested in collaborating, don't hesitate to reach out.
           </Text>
-          <Button
-            size="lg"
-            colorScheme="teal"
-            bg="teal.400"
-            _hover={{ bg: "teal.500" }}
-          >
-            Contact Us
-          </Button>
+         
         </VStack>
 
         {/* Optional Spacer for Image */}

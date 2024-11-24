@@ -2,7 +2,7 @@ import React from 'react';
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import image from '../assets/man.jpg';
+import image from '../assets/hero.jpeg';
 
 
 
@@ -35,7 +35,7 @@ const Hero = () => {
         <p>With the Epesipay app, you can send and receive cash, pay bills, <br/>and shop at your favourite store
           all with just a few taps on your mobile phone.
         </p>
-        <div className="hero-btns">
+        {/* <div className="hero-btns">
           <a href="https://play.google.com/store/apps/details?id=com.futurizac.epesipay" target='_blank' rel="noreferrer">
             <motion.button 
                 variants={containerVariants} 
@@ -59,7 +59,7 @@ const Hero = () => {
 
           </a>
 
-        </div>
+        </div> */}
         
       </motion.div>
       <motion.div

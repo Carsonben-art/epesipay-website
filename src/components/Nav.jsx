@@ -8,6 +8,7 @@ import {
   Box,
   Stack,
   Image,
+  Text,
 } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
@@ -38,8 +39,9 @@ const Nav = () => {
       left="0"
       width="100%"
       zIndex="1000"
-      bg={scrolled ? "white" : "transparent"}
+      bg={scrolled ? "rgba(255, 255, 255, 0.4)" : "transparent"}
       boxShadow={scrolled ? "md" : "none"}
+      backdropFilter={scrolled ? "blur(5px)" : "none"} // Glass effect for scrolled nav
       transition="all 0.3s ease"
       py={2}
       px={4}
@@ -66,10 +68,13 @@ const Nav = () => {
         >
           {/* Company Menu */}
           <Menu>
-            <MenuButton as={Button} variant="link" color="#3d3d3d">
+            <MenuButton as={Button} variant="link" color="#0087D0">
               Company
             </MenuButton>
-            <MenuList>
+            <MenuList
+              bg="rgba(255, 255, 255, 0.8)" // Transparent background
+              backdropFilter="blur(10px)" // Blur effect
+            >
               <MenuItem as={RouterLink} to="/about">
                 About Us
               </MenuItem>
@@ -81,77 +86,43 @@ const Nav = () => {
 
           {/* Personal Menu */}
           <Menu>
-            <MenuButton as={Button} variant="link" color="#3d3d3d">
+            <MenuButton as={Button} variant="link" color="#0087D0">
               Personal
             </MenuButton>
-            <MenuList>
-              <MenuItem>
-                <ScrollLink to="Services" smooth duration={500}>
-                  Services
-                </ScrollLink>
+            <MenuList bg="rgba(255, 255, 255, 0.8)" backdropFilter="blur(10px)">
+              <MenuItem as={RouterLink} to="/services">
+                Services
               </MenuItem>
-              <MenuItem>
-                <ScrollLink to="Onboarding" smooth duration={500}>
+              <MenuItem as={RouterLink} to="/onboarding">
                   Onboarding
-                </ScrollLink>
               </MenuItem>
-              <MenuItem>
-                <ScrollLink to="Pricing" smooth duration={500}>
+              <MenuItem as={RouterLink} to="/pricing">
                   Pricing
-                </ScrollLink>
               </MenuItem>
-              <MenuItem>
-                <ScrollLink to="Contacts" smooth duration={500}>
+              <MenuItem as={RouterLink} to="/contacts">
                   Contact Us
-                </ScrollLink>
               </MenuItem>
             </MenuList>
           </Menu>
 
           {/* Business Menu */}
           <Menu>
-            <MenuButton as={Button} variant="link" color="#3d3d3d">
+            <Text as={RouterLink}  color="#0087D0" to="/business" fontWeight={'bold'}>
               Business
-            </MenuButton>
-            <MenuList>
-              <MenuItem>
-                <ScrollLink to="Services" smooth duration={500}>
-                  Services
-                </ScrollLink>
-              </MenuItem>
-              <MenuItem>
-                <ScrollLink to="Onboarding" smooth duration={500}>
-                  Onboarding
-                </ScrollLink>
-              </MenuItem>
-              <MenuItem>
-                <ScrollLink to="Pricing" smooth duration={500}>
-                  Pricing
-                </ScrollLink>
-              </MenuItem>
-              <MenuItem>
-                <ScrollLink to="Contacts" smooth duration={500}>
-                  Contact Us
-                </ScrollLink>
-              </MenuItem>
-            </MenuList>
+            </Text>
           </Menu>
 
           {/* Resources Menu */}
           <Menu>
-            <MenuButton as={Button} variant="link" color="#3d3d3d">
+            <MenuButton as={Button} variant="link" color="#0087D0">
               Resources
             </MenuButton>
-            <MenuList>
-              <MenuItem>
-                <ScrollLink to="UserGuide" smooth duration={500}>
+            <MenuList bg="rgba(255, 255, 255, 0.8)" backdropFilter="blur(10px)">
+              <MenuItem as={RouterLink}  to="/guide">
                   User Guide
-                </ScrollLink>
               </MenuItem>
-              <MenuItem>
-                <ScrollLink to="FAQs" smooth duration={500}>
+              <MenuItem as={RouterLink}  to="/faqs">
                   FAQs
-                </ScrollLink>
               </MenuItem>
             </MenuList>
           </Menu>
@@ -180,37 +151,41 @@ const Nav = () => {
               icon={<RxHamburgerMenu />}
               variant="outline"
             />
-            <MenuList>
+            <MenuList
+              bg="rgba(255, 255, 255, 0.8)" // Glass effect
+              backdropFilter="blur(10px)"
+            >
               <MenuItem as={RouterLink} to="/about">
                 About Us
               </MenuItem>
               <MenuItem as={RouterLink} to="/contacts">
                 Contact Us
               </MenuItem>
-              <MenuItem>
-                <ScrollLink to="Services" smooth duration={500}>
-                  Services
-                </ScrollLink>
+              <MenuItem as={RouterLink} to="/services">
+                Services
               </MenuItem>
-              <MenuItem>
-                <ScrollLink to="Onboarding" smooth duration={500}>
+              <MenuItem as={RouterLink} to="/onboarding">
+                
                   Onboarding
-                </ScrollLink>
               </MenuItem>
-              <MenuItem>
-                <ScrollLink to="Pricing" smooth duration={500}>
+              <MenuItem as={RouterLink} to="/business">
+                
+                  Business
+              </MenuItem>
+              <MenuItem as={RouterLink} to="/pricing">
+               
                   Pricing
-                </ScrollLink>
+                
               </MenuItem>
-              <MenuItem>
-                <ScrollLink to="UserGuide" smooth duration={500}>
+              <MenuItem as={RouterLink} to="/guide">
+                
                   User Guide
-                </ScrollLink>
+               
               </MenuItem>
-              <MenuItem>
-                <ScrollLink to="FAQs" smooth duration={500}>
+              <MenuItem as={RouterLink} to="/faqs">
+               
                   FAQs
-                </ScrollLink>
+               
               </MenuItem>
               <MenuItem>
                 <Button bg="#F4AE1A" color="white" width="100%">

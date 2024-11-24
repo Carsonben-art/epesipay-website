@@ -17,7 +17,7 @@ const Home = () => {
       <Onboarding />
       <Mission />
       <PromoSection />
-      <Faqs />
+      {/* <Faqs /> */}
       <FooterHero />
       
     </div>

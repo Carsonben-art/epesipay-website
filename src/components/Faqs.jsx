@@ -49,12 +49,7 @@ const Faqs = () => {
 
   return (
     <Box padding={10} maxWidth="800px" margin="0 auto">
-      <Text fontSize="lg" color="gray.500" textTransform="uppercase" mb={2}>
-        FAQ
-      </Text>
-      <Text fontSize="4xl" fontWeight="bold" mb={8}>
-        Frequently asked questions
-      </Text>
+      
       <Accordion allowToggle>
         {faqs.map((faq, index) => (
           <AccordionItem key={index} border="none" mb={4}>

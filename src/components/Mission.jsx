@@ -81,10 +81,10 @@ const Mission = () => {
           <p className="stat-label">Months of runway</p>
         </motion.div>
       </div>
-      <div className="prices">
+      {/* <div className="prices">
         <h2>Epesipay Transaction Charges</h2>
         <PricingTable />
-      </div>
+      </div> */}
     </motion.section>
   );
 };

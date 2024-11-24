@@ -8,6 +8,12 @@ import Home from './pages/Home';
 import About from './pages/About';
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import ContactUs from './pages/ContactUs';
+import Services from './pages/Services';
+import Onboarding from './pages/Onboarding';
+import Pricing from './pages/Pricing';
+import Business from './pages/Business';
+import UserGuide from './pages/UserGuide';
+import FaqsPage from './pages/FaqsPage';
 
 const App = () => {
   return (
@@ -18,6 +24,12 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<ContactUs />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/onboarding" element={<Onboarding />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/business" element={<Business />} />
+          <Route path="/guide" element={<UserGuide />} />
+          <Route path="/faqs" element={<FaqsPage />} />
           
         </Routes>
         <Footer />

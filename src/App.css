@@ -32,7 +32,8 @@
 .nav .nav-links {
   padding: 10px;
   padding-left: 10px;
-  
+  background-color: rgba(247, 247, 247, 0.8); 
+  backdrop-filter: blur(5px); 
 }
 
 .nav .nav-links a{
@@ -153,6 +154,7 @@
 .hero-container .hero-text p{
     padding-top: 0.5rem;
     color: #000000;
+    font-size: 1.3rem;
 }
 .hero-container .hero-btns{
   display: flex;
@@ -461,6 +463,7 @@
 .about-us .about-container .about-image img{
   width: auto;
   height: 350px;
+  border-radius: 14px;
   filter: drop-shadow(10px 20px 5px rgba(0, 0, 0, 0.1));
 }
 .about-us .about-container .about-text{
